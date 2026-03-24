@@ -42,10 +42,10 @@ Manage Jenkins → System → Global Pipeline Libraries
 Add:
 
 * **Name**: `share_lib`
-* **Default version**: `main`
+* **Default version**: `master`
 * **Retrieval method**: Git
 * **Repository URL**:
-  `https://github.com/your-username/jenkins-shared-lib.git`
+  `https://github.com/chengdevith/share-lib.git`
 
 ---
 
