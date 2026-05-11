@@ -7,7 +7,7 @@ def call(Map config = [:]) {
     def trivyPath = config.trivyPath ?: '/home/enz/trivy/docker-compose.yml'
     def reportPath = config.reportPath ?: '/home/enz/trivy/reports/trivy-report.json'
 
-    def defectdojoUrl = config.defectdojoUrl ?: 'https://defectdojo.devith.it.com'
+    def defectdojoUrl = config.defectdojoUrl ?: 'https://defetchdojo.anajak-khmer.site'
     def defectdojoCred = config.defectdojoCredentialId ?: 'DEFECTDOJO'
 
     def gitUrl = config.gitUrl ?: ''
