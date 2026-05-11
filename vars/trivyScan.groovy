@@ -1,7 +1,7 @@
 def call(Map config = [:]) {
     def fullImage    = config.fullImage    ?: error('trivyScan: fullImage is required')
-    def trivyPath    = config.trivyPath    ?: '/home/enz/trivy/docker-compose.yml'
-    def reportPath   = config.reportPath   ?: '/home/enz/trivy/reports/trivy-report.json'
+    def trivyPath    = config.trivyPath    ?: '/home/istad/trivy/docker-compose.yml'
+    def reportPath   = config.reportPath   ?: '/home/istad/trivy/reports/trivy-report.json'
     def gateSeverity = config.gateSeverity ?: 'HIGH,CRITICAL'
     def reportDir    = reportPath.substring(0, reportPath.lastIndexOf('/'))
 

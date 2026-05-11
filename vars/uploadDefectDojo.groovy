@@ -1,7 +1,7 @@
 def call(Map config = [:]) {
     def defectdojoUrl        = config.defectdojoUrl        ?: error('uploadDefectDojo: defectdojoUrl is required')
     def defectdojoCredentialId = config.defectdojoCredentialId ?: error('uploadDefectDojo: defectdojoCredentialId is required')
-    def reportPath           = config.reportPath           ?: '/home/enz/trivy/reports/trivy-report.json'
+    def reportPath           = config.reportPath           ?: '/home/istad/trivy/reports/trivy-report.json'
     def productTypeName      = config.productTypeName      ?: 'Web Applications'
     def productName          = config.productName          ?: error('uploadDefectDojo: productName is required')
     def engagementName       = config.engagementName       ?: 'Jenkins'

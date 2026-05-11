@@ -4,8 +4,8 @@ def call(Map config = [:]) {
     def imageTag  = config.imageTag ?: "${env.BUILD_NUMBER}"
     def fullImage = "${imageName}:${imageTag}"
 
-    def trivyPath = config.trivyPath ?: '/home/enz/trivy/docker-compose.yml'
-    def reportPath = config.reportPath ?: '/home/enz/trivy/reports/trivy-report.json'
+    def trivyPath = config.trivyPath ?: '/home/istad/trivy/docker-compose.yml'
+    def reportPath = config.reportPath ?: '/home/istad/trivy/reports/trivy-report.json'
 
     def defectdojoUrl = config.defectdojoUrl ?: 'https://defetchdojo.anajak-khmer.site'
     def defectdojoCred = config.defectdojoCredentialId ?: 'DEFECTDOJO'
