@@ -9,7 +9,7 @@ def call(Map config = [:]) {
 
     withCredentials([string(credentialsId: defectdojoCredentialId, variable: 'DEFECTDOJO_API_KEY')]) {
         sh """
-            curl --fail -k -X POST "${defectdojoUrl}/api/v2/reimport-scan/" \
+            curl --fail-with-body -sS -k -X POST "${defectdojoUrl}/api/v2/reimport-scan/" \
               -H "Authorization: Token \${DEFECTDOJO_API_KEY}" \
               -F "scan_type=Trivy Scan" \
               -F "file=@${reportPath}" \
